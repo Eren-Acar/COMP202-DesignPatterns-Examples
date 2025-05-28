@@ -1,0 +1,17 @@
+package proxy;
+
+public class CreditCard implements Payment {
+	private Cash realServiceSupplier;
+	@Override
+	public void perform(Account account, double amount) {
+		// TODO Auto-generated method stub
+		
+		if(realServiceSupplier==null) {
+			realServiceSupplier=new Cash();
+		}
+		
+		realServiceSupplier.perform(account, amount);
+
+	}
+
+}

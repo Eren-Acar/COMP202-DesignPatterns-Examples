@@ -1154,3 +1154,49 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.genuitec.copilot4eclipse.chat 1 0 2025-05-28 19:31:23.393
 !MESSAGE EdgeDataDir: C:\Users\Eren Acar\Desktop\comp201\.metadata\.plugins\com.genuitec.copilot4eclipse\edgedata
+!SESSION 2025-05-28 19:32:20.661 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=23.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=tr_TR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-28 19:32:24.327
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-28 19:32:42.144
+!MESSAGE Logback config file: C:\Users\Eren Acar\Desktop\comp201\COMP202-DesignPatterns-Examples\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-28 19:32:51.195
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Eren Acar'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2025-05-28 19:32:52.385
+!MESSAGE EdgeDataDir: C:\Users\Eren Acar\Desktop\comp201\COMP202-DesignPatterns-Examples\.metadata\.plugins\com.genuitec.copilot4eclipse\edgedata
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2025-05-28 19:33:30.026
+!MESSAGE Persistence: C:\Users\Eren Acar\AppData\Local\github-copilot
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2025-05-28 19:33:30.358
+!MESSAGE Jetty server started: true uri: http://192.168.1.118:62909/chat
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2025-05-28 19:33:35.036
+!MESSAGE Workspace labels: java
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-05-28 20:20:53.718
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2025-05-28 20:20:53.719
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-05-28 20:20:53.719
+!MESSAGE The project description file (.project) for '.org.eclipse.egit.core.cmp' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2025-05-28 20:20:53.736
+!MESSAGE Jetty server stopped: Server@44dc628a{STOPPED}[10.0.20,sto=0]
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2025-05-28 20:20:53.737
+!MESSAGE Jetty server stopped: true
