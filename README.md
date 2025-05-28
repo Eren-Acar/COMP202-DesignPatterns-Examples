@@ -1,0 +1,1 @@
+In addition to patterns included in this repository. Two more design patterns were covered during the semester which are Proxy and Facade. However, example code for these two patterns is not included in this repository.
