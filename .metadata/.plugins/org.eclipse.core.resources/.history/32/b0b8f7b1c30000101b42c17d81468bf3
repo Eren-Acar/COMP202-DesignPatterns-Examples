@@ -1,0 +1,32 @@
+package week04.SingeltonDesignPattern.StaticBlock;
+
+public class CounterStaticBlock {
+	
+	private static CounterStaticBlock instance;
+	private int count = 0;
+
+	private CounterStaticBlock() {
+		count = 0;
+	}
+
+	static {
+		try {
+			instance = new CounterStaticBlock();
+		} catch (Exception e) {
+			throw new RuntimeException("Exception occured in creating singleton instance");
+		}
+	}
+
+	public static CounterStaticBlock getInstance() {
+		return instance;
+	}
+
+	public void increment() {
+		count++;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+}

@@ -1,0 +1,51 @@
+package BehavioralDesignPatterns.Observer;
+
+import java.util.HashSet;
+import java.util.Set;
+
+//Observable
+public class YoutubeChannel {
+//User is observer
+	HashSet<User> followers;
+	private String channelName;
+	private String state;
+	
+	public YoutubeChannel(String channelName) {
+		this.channelName = channelName;
+		followers = new HashSet<User>();
+		
+	}
+	
+	public void attach(User user) {
+	if (!followers.contains(user))
+		followers.add(user);
+	}
+	
+	public void detach(User user) {
+		if (followers.contains(user))
+			followers.remove(user);
+	}
+	
+	public String notifyFollowers() {
+	followers.forEach(user -> user.update(this));
+    return "update";
+	}
+	
+	public void setState(String state) {
+		this.state = state;
+		this.notifyFollowers();
+	}
+	
+	public String getState() {
+		return state;
+	}
+
+	public String getChannelName() {
+		// TODO Auto-generated method stub
+		return channelName;
+	}
+	
+	
+
+}
+

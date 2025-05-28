@@ -1,0 +1,30 @@
+package BehavioralDesignPatterns.Mediator;
+
+public class Main {
+	public static void main(String[] args) {
+		AirController airController = new AirController();
+		Flight flight1 = new Flight(airController);
+		Flight flight2 = new Flight(airController);
+		Flight flight3 = new Flight(airController);
+		Flight flight4 = new Flight(airController);
+		
+
+		System.out.println(airController.getCurrentStatus());
+
+		if (flight1.canTakeOff()) {
+			System.out.println("Flight 1 can take off");
+		} else {
+			System.out.println("Flight 1 cannot take off");
+		}
+
+		if (flight2.canTakeOff()) {
+			System.out.println("Flight 2 can take off");
+		} else {
+			System.out.println("Flight 2 cannot take off");
+		}
+
+		System.out.println(airController.getCurrentStatus());
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package BehavioralDesignPatterns.Observer;
+
+public class User {
+	String name;
+	
+	
+	public User(String name) {
+		this.name = name;
+	}
+	
+	public void followChannel(YoutubeChannel channel) {
+		channel.attach(this);
+	}
+	
+	public void update(YoutubeChannel channel) {
+		// TODO Auto-generated method stub
+		System.out.println("User " + name + " is notified of new video on channel " + channel.getChannelName()
+		        + " with state: " + channel.getState());
+		
+		
+	}
+
+}

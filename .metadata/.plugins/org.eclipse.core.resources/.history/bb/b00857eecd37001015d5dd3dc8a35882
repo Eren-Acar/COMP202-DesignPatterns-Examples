@@ -1,0 +1,10 @@
+package week12.Behavioral.Design.Patterns.Observer;
+
+public class User {
+
+	public void update() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

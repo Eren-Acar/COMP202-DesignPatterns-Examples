@@ -1,0 +1,8 @@
+package week12.Behavioral.Design.Patterns.Visitor;
+
+public abstract class Node {
+	private double latitude;
+	private double longitude;
+	
+
+}

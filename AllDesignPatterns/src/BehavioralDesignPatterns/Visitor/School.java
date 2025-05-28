@@ -1,0 +1,19 @@
+package BehavioralDesignPatterns.Visitor;
+
+public class School extends Node{
+
+	private String websiteurl;
+	
+	public School(double latitude, double longitude, String websiteurl) {
+		super(latitude, longitude);
+		// TODO Auto-generated constructor stub
+	
+		this.websiteurl = websiteurl;
+	}
+	
+	public String getWebsiteurl() {
+		return websiteurl;
+	}
+	
+
+}

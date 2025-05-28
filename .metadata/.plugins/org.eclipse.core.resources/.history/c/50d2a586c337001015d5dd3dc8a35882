@@ -1,0 +1,15 @@
+package week12.Behavioral.Design.Patterns.Visitor;
+
+public class Hospital extends Node {
+
+	private LocalaAte foundDate;
+	public Hospital(double latitude, double longitude, ) {
+		super(latitude, longitude);
+		// TODO Auto-generated constructor stub
+		
+	}
+	
+	
+	
+
+}

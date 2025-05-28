@@ -1,0 +1,20 @@
+package StructrualDesignPatterns.FlyWeight;
+
+public class Mermi {
+	private int mermiSize;
+	
+
+
+	public Mermi(int mermiSize) {
+		this.mermiSize = mermiSize;
+	}
+		
+	
+
+	public void atesle() {
+		for (int i = 0; i < mermiSize; i++) {
+			System.out.println("Ateslendi");
+		}
+	}
+
+}

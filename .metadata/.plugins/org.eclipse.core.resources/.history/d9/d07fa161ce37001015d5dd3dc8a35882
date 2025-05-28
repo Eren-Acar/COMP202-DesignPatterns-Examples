@@ -1,0 +1,39 @@
+package week12.Behavioral.Design.Patterns.Observer;
+
+import java.util.Set;
+
+//Observable
+public class YoutubeChannel {
+//User is observer
+	Set<User> followers;
+	private String channelName;
+	private String state;
+	
+	public YoutubeChannel(String channelName) {
+		this.channelName = channelName;
+		followers = Set.of();
+		
+	}
+	
+	public void attach(User user) {
+	if (!followers.contains(user))
+		followers.add(user);
+	}
+	
+	public void detach(User user) {
+		if (followers.contains(user))
+			followers.remove(user);
+	}
+	
+	public String notifyFollowers() {
+	followers.forEach(user -> user.update(this));
+    return "update";
+	}
+	
+	public void setState(String state) {
+		this.state = state;
+		this.notifyFollowers();
+	}
+
+}
+

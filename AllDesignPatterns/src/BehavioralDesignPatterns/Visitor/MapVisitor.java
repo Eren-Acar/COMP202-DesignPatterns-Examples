@@ -1,0 +1,38 @@
+package BehavioralDesignPatterns.Visitor;
+
+public class MapVisitor implements NodeVisitor{
+
+	String format = "<?xml> \n \t <nodes>";
+	@Override
+	public void visit(Node node) {
+		// TODO Auto-generated method stub
+		
+		if (node instanceof Hospital) {
+			format = format.concat(
+					"<node> \n \t" +
+			        "<latitude>" + node.getLatitude() + "</latitude> \n" +
+					"<longitude>" + node.getLongitude() + "</longitude> \n" +
+					"<foundDate>" + ((Hospital) node).getFoundDate() + "</foundDate> \n"+
+					"</node> \n"
+					);
+			
+		} else if (node instanceof School) {
+			format = format.concat("<node> \n \t" + "<latitude>" + node.getLatitude() + "</latitude> \n" + "<longitude>"
+					+ node.getLongitude() + "</longitude> \n" + "<websiteurl>" + ((School) node).getWebsiteurl()
+					+ "</websiteurl> \n" + "</node> \n");
+		} else {
+			System.out.println("Node latitude: " + node.getLatitude() + ", longitude: " + node.getLongitude());
+		}
+		
+	}
+	
+	public String exportAsXML(Map map) {
+		map.getNodes().forEach(
+				node-> this.visit(node));
+				;
+		
+		return this.format + "</xml>";
+	}
+
+	
+}

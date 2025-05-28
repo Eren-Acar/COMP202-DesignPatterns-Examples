@@ -1,0 +1,17 @@
+package SOLID.LiskovSubstitutionPrinciple;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class BirdOwner {
+	public void free(List<? extends Flyable> birds) {
+		birds.forEach(bird -> bird.fly()); // <1
+	}
+	
+	public static void main(String[] args) {
+		BirdOwner owner = new BirdOwner();
+		List<Bird> birds = Arrays.asList(new Bird(), new Bird(), new devekuşu());
+		
+		owner.free(birds);
+	}
+}

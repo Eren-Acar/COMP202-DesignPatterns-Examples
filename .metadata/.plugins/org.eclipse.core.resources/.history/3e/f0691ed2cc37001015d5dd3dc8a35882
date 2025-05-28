@@ -1,0 +1,16 @@
+package week12.Behavioral.Design.Patterns.Observer;
+
+import java.util.Set;
+
+//Observable
+public class YoutubeChannel {
+//User is observer
+	Set<User> users;
+	private String channelName;
+	
+	public YoutubeChannel(String channelName) {
+		this.channelName = channelName;
+		users = Set.of();
+		
+	}
+}

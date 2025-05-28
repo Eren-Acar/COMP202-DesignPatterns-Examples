@@ -1,0 +1,18 @@
+package week12.Behavioral.Design.Patterns.Visitor;
+
+import java.time.LocalDate;
+
+public class Hospital extends Node {
+
+	private LocalDate foundDate;
+	public Hospital(double latitude, double longitude, LocalDate foundDate) {
+		super(latitude, longitude);
+		// TOD Auto-generated constructor stub
+		this.foundDate = foundDate;
+		
+	}
+	
+	
+	
+
+}

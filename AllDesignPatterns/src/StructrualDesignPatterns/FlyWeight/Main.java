@@ -1,0 +1,18 @@
+package StructrualDesignPatterns.FlyWeight;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Komutan komutan = new Komutan();
+		Er er = new Er();
+		
+		komutan.ates();
+		System.out.println();
+		er.ates();
+		
+		
+
+	}
+
+}

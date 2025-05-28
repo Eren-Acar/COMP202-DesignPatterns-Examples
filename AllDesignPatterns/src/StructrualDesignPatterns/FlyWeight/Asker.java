@@ -1,0 +1,22 @@
+package StructrualDesignPatterns.FlyWeight;
+
+public abstract class Asker {
+	protected int mermiSize;
+	
+//	private Mermi mermi;
+	public Asker(int mermiSize) {
+		this.mermiSize = mermiSize;
+	
+	}
+	
+	public void ates() {
+		MermiFactory.GetMermi(this).atesle();
+	}
+	
+	public int getMermiSize() {
+		return mermiSize;
+	}
+	
+	
+	
+}

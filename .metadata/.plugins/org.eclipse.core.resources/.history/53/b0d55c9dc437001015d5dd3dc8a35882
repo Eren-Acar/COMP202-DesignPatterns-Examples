@@ -1,0 +1,22 @@
+package week12.Behavioral.Design.Patterns.Visitor;
+
+public class MapVisitor implements NodeVisitor{
+
+	@Override
+	public void visit(Node node) {
+		// TODO Auto-generated method stub
+		
+		if (node instanceof Hospital) {
+			Hospital hospital = (Hospital) node;
+			System.out.println("Hospital found on: " + hospital.getFoundDate());
+		} else if (node instanceof School) {
+			School school = (School) node;
+			System.out.println("School website: " + school.getWebsiteurl());
+		} else {
+			System.out.println("Node latitude: " + node.getLatitude() + ", longitude: " + node.getLongitude());
+		}
+		
+	}
+
+	
+}

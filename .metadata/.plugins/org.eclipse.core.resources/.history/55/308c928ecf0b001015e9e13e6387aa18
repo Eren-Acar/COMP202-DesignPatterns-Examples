@@ -1,0 +1,13 @@
+package week05.SingeltonDesignPattern.prototype;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Player player = new Player("John", 5);
+		System.out.println(player.getName() + " " + player.getLevel());
+
+		Player player2 = player.clone();
+		System.out.println(player2.getName() + " " + player2.getLevel());
+	}
+
+}

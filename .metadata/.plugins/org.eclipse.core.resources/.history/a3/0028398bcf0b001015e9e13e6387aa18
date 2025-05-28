@@ -1,0 +1,31 @@
+package week05.SingeltonDesignPattern.prototype;
+
+public class Player {
+	private String name;
+	private int level;
+	
+	public Player(String name, int level) {
+		this.name = name;
+		this.level = level;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getLevel() {
+		return level;
+	}
+	
+	
+	
+	private Player(Player player) {
+		this.name = player.getName();
+		this.level = player.getLevel();
+	}
+	
+	public Player clone() {
+		return new Player(this);
+	}
+
+}

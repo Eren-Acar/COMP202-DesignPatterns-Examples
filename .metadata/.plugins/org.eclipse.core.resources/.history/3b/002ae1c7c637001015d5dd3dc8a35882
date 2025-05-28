@@ -1,0 +1,11 @@
+package week12.Behavioral.Design.Patterns.Visitor;
+import java.time.LocalDate;
+
+public class Client {
+	public static void main(String[] args) {
+		Map map = new Map();
+		map.addNode(new Hospital(123.0, 456.0, new LocalDate().now()) );
+		
+
+}
+}

@@ -1,0 +1,25 @@
+package BehavioralDesignPatterns.Mediator;
+
+import java.util.Arrays;
+
+public class Flight {
+	private AirController airController;
+	
+	public Flight(AirController airController) {
+		this.airController = airController;
+		this.airController.addFlight(this);
+	}
+
+	
+	public boolean canTakeOff() {
+		int response = airController.answerCall(this);
+		if (response == -1) {
+			return false;
+		}
+		else {
+			airController.sendTakeOffSignal(this, response);
+			return true;
+		}
+		
+	}
+}
