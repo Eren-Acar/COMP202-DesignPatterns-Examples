@@ -1,7 +1,0 @@
-package adapter;
-
-public interface Analyzer {
-	
-	void analyze(String jsonData);
-
-}

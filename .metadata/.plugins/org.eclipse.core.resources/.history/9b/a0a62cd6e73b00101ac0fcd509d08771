@@ -1,7 +1,0 @@
-package adapter;
-
-public abstract class ThirdPartyAnalyzer {
-	
-	public abstract String analyze(String xmlData);
-
-}

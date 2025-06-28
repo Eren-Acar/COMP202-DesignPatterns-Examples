@@ -1,6 +1,0 @@
-package week12.Behavioral.Design.Patterns.Visitor;
-
-public interface NodeVisitor {
-	void visit(Node node);
-
-}
